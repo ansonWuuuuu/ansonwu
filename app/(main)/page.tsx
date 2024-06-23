@@ -4,7 +4,8 @@ import Image from "next/image";
 import AboutMe from "@/components/AboutMe";
 import { useParams, useSearchParams } from "next/navigation";
 import Education from "@/components/Education";
-import Skills from "@/components/Skills";
+import Experiences from "@/components/Experiences";
+import Contact from "@/components/Contact";
 
 export default function Home() {
   return (
@@ -15,8 +16,11 @@ export default function Home() {
       <div className="snap-y snap-center w-full h-full flex" id="Education">
         <Education />
       </div>
-      <div className="snap-y snap-center w-full h-full flex" id="Skills">
-        <Skills />
+      <div className="snap-y snap-center w-full h-full flex" id="Experiences">
+        <Experiences />
+      </div>
+      <div className="snap-y snap-center w-full h-full flex" id="Contact">
+        <Contact />
       </div>
     </div>
   );

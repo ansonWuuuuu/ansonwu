@@ -36,7 +36,7 @@ export default function TopBar() {
       <div className="w-full flex justify-center items-center mt-2">
         <PageBtn page="AboutMe" />
         <PageBtn page="Education" />
-        <PageBtn page="Projects" />
+        <PageBtn page="Experiences" />
         <PageBtn page="Contact" />
       </div>
     </div>

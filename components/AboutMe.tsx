@@ -7,7 +7,7 @@ export default function AboutMe() {
     <div className="w-full h-full flex items-center justify-center overflow-auto">
       <div className="w-1/2 h-full bg-white flex items-center justify-center">
         <TextCard>
-            <span className=" text-2xl font-bold">
+            <span className=" text-2xl font-bold text-primary-dark">
                 About Me
             </span>
             <p>

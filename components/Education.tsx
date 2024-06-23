@@ -10,7 +10,7 @@ export default function Education() {
       </div>
       <div className="w-1/2 h-full bg-white flex items-center justify-center overflow-auto">
         <TextCard className="overflow-y-auto">
-          <span className="text-2xl font-bold">National Taiwan University</span>
+          <span className="text-2xl font-bold text-primary-dark">National Taiwan University</span>
           <p className="text-lg flex-grow">
             Information Management
           </p>
