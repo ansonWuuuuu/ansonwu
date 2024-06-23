@@ -113,9 +113,7 @@ export default function Experiences() {
             duration="Sep 2023 - Dec 2023"
           >
             <li>
-              A 2D RPG game base on NTU's campus. Players take on the role of a
-              new student who finds themselves in a crisis on the challenging
-              campus of National Taiwan University (NTU).
+              {"A 2D RPG game base on NTU's campus. Players take on the role of a new student who finds themselves in a crisis on the challenging campus of National Taiwan University (NTU)."}
             </li>
             <li>
               Key features of the game include freely exploring the NTU campus,
@@ -180,9 +178,7 @@ export default function Experiences() {
               code and answer question on the website.
             </li>
             <li>
-              NTU Art Fest has a quite large organizing team. It's a great
-              experience to learn how a bigger organization works and how to
-              cooperate with students from all kinds of departments.
+              {"NTU Art Fest has a quite large organizing team. It's a great experience to learn how a bigger organization works and how to cooperate with students from all kinds of departments."}
             </li>
           </Project>
 
