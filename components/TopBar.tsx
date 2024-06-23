@@ -3,6 +3,7 @@
 import { Lobster_Two } from "next/font/google";
 import Link from "next/link";
 import { useRouter } from "next/navigation";
+import { useEffect } from "react";
 
 const lobsterTwo = Lobster_Two({
   subsets: ["latin"],
@@ -14,13 +15,23 @@ const lobsterTwo = Lobster_Two({
 export default function TopBar() {
   const router = useRouter();
 
+  const handleScroll = (page: string, event: React.MouseEvent) => {
+    event.preventDefault(); // Prevent default anchor behavior
+    const element = document.getElementById(page);
+
+    if (element) {
+      // Use the `scrollIntoView` method for smooth scrolling
+      element.scrollIntoView({ behavior: 'smooth' });
+    }
+  };
+
   const PageBtn = ({ page }: { page: string }) => {
     return (
-      <Link href={`#${page}`}>
+      <a onClick={(e) => handleScroll(page, e)}>
         <span className="text-normal font-bold text-black mx-10 cursor-pointer">
           {page}
         </span>
-      </Link>
+      </a>
     );
   };
 
