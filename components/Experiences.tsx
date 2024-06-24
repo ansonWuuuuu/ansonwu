@@ -19,7 +19,7 @@ export default function Experiences() {
   }) => (
     <div className="my-2 w-full">
       <div className="w-full">
-        <a className="font-bold hover:text-primary hover:animate-pulse" href={link}>
+        <a className="font-bold hover:text-my-primary hover:animate-pulse" href={link}>
           {name}
         </a>{" "}
         | <span className="float-right">{duration}</span>
@@ -32,10 +32,10 @@ export default function Experiences() {
   );
 
   return (
-    <div className="w-full h-full flex  items-center justify-center">
-      <div className="w-1/2 h-full bg-white flex items-center justify-center overflow-auto">
+    <div className="w-full h-full flex flex-wrap  items-center justify-center">
+      <div className="h-1/2 w-full sm:w-1/2 sm:h-full bg-white flex items-center justify-center overflow-auto">
         <TextCard className="overflow-y-auto">
-          <span className="text-2xl font-bold text-primary-dark">Skills</span>
+          <span className="text-2xl font-bold text-my-primary-dark">Skills</span>
 
           <ul className="list-disc ml-6">
             <li>
@@ -75,9 +75,10 @@ export default function Experiences() {
           </ul>
         </TextCard>
       </div>
-      <div className="w-1/2 h-full bg-white flex items-center justify-center">
+
+      <div className="h-1/2 w-full sm:w-1/2 sm:h-full bg-white flex items-center justify-center">
         <TextCard>
-          <span className="text-2xl font-bold text-primary-dark">Projects</span>
+          <span className="text-2xl font-bold text-my-primary-dark">Projects</span>
           <Project
             name="GoSurvey"
             link="https://youtu.be/gL0HDOxsVYM?si=vkzwavejb4LTdxUK"
@@ -182,7 +183,7 @@ export default function Experiences() {
             </li>
           </Project>
 
-          <span className="text-2xl font-bold text-primary-dark">Internship</span>
+          <span className="text-2xl font-bold text-my-primary-dark">Internship</span>
           <Project
             name="Taishin Bank - Software Engineer Intern"
             link="https://www.taishinbank.com.tw/"
