@@ -3,14 +3,15 @@ import TextCard from "./TextCard";
 
 export default function Education() {
   return (
-    <div className="w-full h-full flex  items-center justify-center">
-      <div className="w-1/2 h-full bg-white flex items-center justify-center">
+    <div className="w-full h-full flex flex-wrap items-center justify-center">
+      <div className="h-1/2 w-full sm:w-1/2 sm:h-full bg-white flex sm:flex-row flex-col items-center justify-center">
         <Image src="/ntu.png" alt="" width={200} height={100} className="max-w-[70%] max-h-[30%] object-contain" />
         <Image src="/ntu-im.png" alt="" width={200} height={100} className="max-w-[70%] max-h-[30%] object-contain" />
       </div>
-      <div className="w-1/2 h-full bg-white flex items-center justify-center overflow-auto">
+
+      <div className="h-1/2 w-full sm:w-1/2 sm:h-full bg-white flex items-center justify-center overflow-auto">
         <TextCard className="overflow-y-auto">
-          <span className="text-2xl font-bold text-primary-dark">National Taiwan University</span>
+          <span className="text-2xl font-bold text-my-primary-dark">National Taiwan University</span>
           <p className="text-lg flex-grow">
             Information Management
           </p>
