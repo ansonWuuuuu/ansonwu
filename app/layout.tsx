@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { Kalam } from "next/font/google";
+import { Analytics } from "@vercel/analytics/react";
 import "./globals.css";
 
 const lobsterTwo = Kalam({
@@ -28,8 +29,9 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
-      <body className={lobsterTwo.className}>{children}</body>
-    </html>
+      <html lang="en">
+        <body className={lobsterTwo.className}>{children}</body>
+        <Analytics/>
+      </html>
   );
 }
