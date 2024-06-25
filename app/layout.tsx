@@ -29,9 +29,11 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-      <html lang="en">
-        <body className={lobsterTwo.className}>{children}</body>
-        <Analytics/>
-      </html>
+    <html lang="en">
+      <body className={lobsterTwo.className}>
+        {children}
+        <Analytics />
+      </body>
+    </html>
   );
 }
