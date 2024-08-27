@@ -30,6 +30,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
+      <head>
+        <meta property="og:image" content="https://ansonwu.vercel.app/freelancer.png" />
+      </head>
       <body className={lobsterTwo.className}>
         {children}
         <Analytics />
